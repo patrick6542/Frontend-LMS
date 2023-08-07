@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Library Management System</h1>
+
+    <!-- User Registration Form -->
+    <div id="signup" class="form">
+        <h2>Sign Up</h2>
+        <input type="text" id="signup-username" placeholder="Username">
+        <input type="password" id="signup-password" placeholder="Password">
+        <select id="signup-role">
+            <option value="LIBRARIAN">Librarian</option>
+            <option value="MEMBER">Member</option>
+        </select>
+        <div class="form-buttons">
+            <button onclick="register()">Register</button>
+            <button onclick="showSignInForm()">Sign In</button>
+        </div>
+    </div>
+
+    <!-- User Login Form -->
+    <div id="signin" class="form" style="display: none;">
+        <h2>Sign In</h2>
+        <input type="text" id="signin-username" placeholder="Username">
+        <input type="password" id="signin-password" placeholder="Password">
+        <div class="form-buttons">
+            <button onclick="login()">Login</button>
+            <button onclick="showSignUpForm()">Sign Up</button>
+        </div>
+    </div>
+
+<div id="librarian-actions" class="content" style="display: none;">
+    <h2>Librarian Actions</h2>
+    <div id="add-book">
+        <h3>Add Book</h3>
+        <input type="text" id="book-title" placeholder="Title">
+        <input type="text" id="book-author" placeholder="Author">
+        <button onclick="addBook()">Add Book</button>
+    </div>
+    <!-- Update Book Form -->
+    <div id="update-book">
+        <h3>Update Book</h3>
+        <input type="number" id="update-book-id" placeholder="Book ID">
+        <input type="text" id="update-book-title" placeholder="New Title">
+        <input type="text" id="update-book-author" placeholder="New Author">
+        <button onclick="updateBook()">Update Book</button>
+    </div>
+    <!-- Remove Book Form -->
+    <div id="remove-book">
+        <h3>Remove Book</h3>
+        <input type="number" id="remove-book-id" placeholder="Book ID">
+        <button onclick="removeBook()">Remove Book</button>
+    </div>
+    <!-- Add Member Form -->
+    <div id="add-member">
+        <h3>Add Member</h3>
+        <input type="text" id="member-username" placeholder="Username">
+        <input type="password" id="member-password" placeholder="Password">
+        <button onclick="addMember()">Add Member</button>
+    </div>
+    <!-- Update Member Form -->
+    <div id="update-member">
+        <h3>Update Member</h3>
+        <input type="number" id="update-member-id" placeholder="Member ID">
+        <input type="text" id="update-member-username" placeholder="New Username">
+        <input type="password" id="update-member-password" placeholder="New Password">
+        <button onclick="updateMember()">Update Member</button>
+    </div>
+    <!-- Remove Member Form -->
+    <div id="remove-member">
+        <h3>Remove Member</h3>
+        <input type="number" id="remove-member-id" placeholder="Member ID">
+        <button onclick="removeMember()">Remove Member</button>
+    </div>
+</div>
+
+
+    <!-- Member Actions -->
+    <!-- Member Actions -->
+<div id="member-actions" class="content" style="display: none;">
+    <h2>Member Actions</h2>
+    <!-- View Available Books -->
+    <div id="view-books">
+        <h3>View Available Books</h3>
+        <button onclick="fetchBooks()">View Books</button>
+        <ul id="book-list"></ul>
+    </div>
+    <!-- Borrow Book -->
+    <div id="borrow-book">
+        <h3>Borrow Book</h3>
+        <input type="number" id="borrow-book-id" placeholder="Book ID">
+        <button onclick="borrow()">Borrow</button>
+    </div>
+    <!-- Return Book -->
+    <div id="return-book">
+        <h3>Return Book</h3>
+        <input type="number" id="return-book-id" placeholder="Book ID">
+        <button onclick="returnBook()">Return</button>
+    </div>
+    <!-- Delete Own Account -->
+    <div id="delete-account">
+        <h3>Delete My Account</h3>
+        <button onclick="deleteOwnAccount()">Delete Account</button>
+    </div>
+</div>
+
+    <!-- Delete User -->
+    <div id="delete" class="content" style="display: none;">
+        <h2>Delete User</h2>
+        <input type="number" id="user-id" placeholder="User ID">
+        <button onclick="deleteUser()">Delete User</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* styles.css */
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Form styling */
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form button {
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #23272b;
+}
+
+/* Content styling */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Book list styling */
+#book-list {
+  list-style: none;
+  padding: 0;
+}
+
+#book-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Action buttons styling */
+#actions button, #delete button {
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#actions button:hover, #delete button:hover {
+  background-color: #23272b;
+}
